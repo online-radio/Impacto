@@ -1,0 +1,1014 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Radio Leona 91.0</title>
+<meta name="language" content="spanish">
+<meta name="author" content="Oscar">
+<meta name="description" content="Radio Comunitaria desde el Municipio de  Buenavista - Córdoba - Colombia, variada programación músical e informativa.">
+<meta name="keywords" content="Emisora Comunitaria Córdoba, Radio Leona">
+<meta property="og: title" content="Emisora Radio Leona">
+<meta property="og:site_name" content="www.radioleona.com">
+<meta property="og: description" content="Radio Comunitaria ">
+<link rel="canonical" href="https://www.radioleona.com">
+
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+	</script>
+	<![endif]-->
+	<meta name="viewport" content="width=device-width, user-scalable=no,
+	initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" href="css/radio.css">
+    <link rel="icon" href="imagenes/diadema.png">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/fonts-icon.css">
+	<link rel="stylesheet" href="css/animate.css">
+    <script src="js/prefix.min.js"></script>
+	<link rel="stylesheet" href="owl/assets/owl.carousel.min.css">
+	<script type="text/javascript" src="js/image.js"></script>
+	<script language="javascript"> AC_FL_RunContent = 0; </script>
+    <script language="javascript"> DetectFlashVer = 0; </script>	
+	<script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.1.min.js"> </script>
+    <script type="text/javascript" src="/jPlayer/js/jquery.jplayer.min.js"></script>
+    <link rel="stylesheet" href="css/lightbox.min.css">
+	<script src="js/lightbox-plus-jquery.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="js/app.js"></script>
+
+	
+	
+	<link rel="stylesheet" href="css/animate.css">
+	
+	<script src="js/locutores.js"></script>
+    
+	<script src="js/jquery 1.9.0.min.js"></script>
+ 
+</head>
+
+
+<body>
+
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v15.0" nonce="0Jbp4vO2"></script>
+
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v7.0&appId=275754110188363&autoLogAppEvents=1" nonce="fn9QrpVN"></script>
+
+	<!-- Menu de Navegacion -->
+    <header id="header">
+	
+    <nav class="menu">	
+	  <div class="logo-box">
+	  
+       <div id="radios">
+         <h1 class="icon-earth"></h1>
+      </div>
+	  
+	  
+      <h1 class="logo"><span></span></h1> 
+       <span class="btn-menu"><i class="icon-menu"></i></span>
+     </div>
+     
+	<div class="nav-menu" class="menu-fixed">
+	
+     <div class="list-container">
+	 
+	 
+       <div class="nav_perfil">
+          <div class="nav_img">
+              <img src="imagenes/logo.png" alt="">
+          </div>
+                        
+          <div>
+            <a href="#" class="nav_name"></a>
+               <h2 class="nav_profesion"></h2>
+          </div>
+        </div>
+	  
+	 
+        <ul class="lists">
+        <li><a href='#EMISORA'  class='activo'><span class="icon-office"></span>Inicio</a></li>
+        <li><a href='#TURISMO'><span class="icon-location"></span>Municipio</a></li>
+		<li><a href='#NOTAS'><span class=" icon-users"></span>Galeria</a></li>	
+	    <li><a href='#RADIO'><span class=" icon-bubble"></span>Radio</a></li>
+		
+        </ul>
+     </div>
+	 </div>
+    </nav>
+	
+
+</header>
+ 
+
+  <main> 
+  
+ 	
+  <section id="contenido">
+  
+   
+     <article id="EMISORA" class="elemento visible">
+    
+      <div class="caja-matrix">
+	
+		<div class="caja-texto">
+	
+         <div class="box-testimonio">
+           <div class="card-testimonio">
+         
+           <div class="testimonio-text">
+         <h4>EMISORA</h4>
+         <p>Somos una radio comunitaria al servicio del municipio de Buenavista y sus alrededores. Nuestro propósito es informar a traves del magazín
+            y de contenido social, junto a la variada programación músical.<br>
+		   Los invitamos a seguirnos, para que juntos construyamos una radio pluralista.</p>
+         </div>
+        </div>
+
+      </div>
+	 
+	</div>
+ 
+		
+	  
+	  <aside>
+	  
+	  	
+	  <script>
+
+        $(document).ready(function(){
+            var stream = {
+            title: "Radio Leona",
+            mp3: "https://one.cloudstreaming.eu/proxy/buenavista/stream"	                    	
+         },
+        ready = false;
+          $("#jquery_jplayer_1").jPlayer({
+          ready: function (event) {
+            ready = true;
+                $(this).jPlayer("setMedia", stream).jPlayer("play");
+  
+            },
+            pause: function() {
+                $(this).jPlayer("clearMedia");
+            },
+            error: function(event) {
+                if(ready && event.jPlayer.error.type === $.jPlayer.error.URL_NOT_SET) {
+                    
+                    $(this).jPlayer("setMedia", stream).jPlayer("play");
+                }
+            },
+            swfPath: "/js",  
+            supplied: "mp3",
+	        autoplay: "true",
+            preload: "auto",
+            wmode: "window",
+            keyEnabled: true,
+            cssSelectorAncestor: "",
+            cssSelector: {
+            play: "#play",
+            pause: "#pause",
+            },
+        });
+      });
+   
+	</script>
+
+	
+          <div align="left"></div>
+          
+		      <div id="player">
+                <div id="logo">
+                  <div align="left"><img src="imagenes/logo.png" alt="" width="100" height="100"></div>
+                </div>
+
+                <a href="javascript:;" id="play"></a><a href="javascript:;" id="pause"></a>
+                <div id="titulo">
+               
+                </div>
+               
+			     <div id="titulo">
+                  <h3>stream live</h3>
+                 </div>
+          		
+                 
+                  <div id="song" class="song"><marquee scrollamount="6" behavior="scroll" direction="left"><span id="current-track">Radio Leona 91.0</span></marquee></div>
+                
+                <div id="animation">
+                   <div align="left"><img src="imagenes/ecualizador.gif" alt="" width="155" height="50"></div>
+                </div>
+         
+            
+			</div>
+			
+			
+			 <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+			 
+			 <script type="text/javascript">
+              setTimeout(function(){radioTitle();}, 2000);
+              setInterval(function(){radioTitle();}, 10000);
+             </script> 
+              					
+	     </aside>
+
+	</div>
+ 
+ 
+	<section class="boxes-portfolios" id="fans" scrollflow -slide-top">	
+	
+        <div class="caja-portfolios">
+           <h3>FAN PAGE</h3>
+
+           <div class="fb_background">		   
+  		
+          <div class="fb-page" data-href="https://www.facebook.com/BuenavistaSt" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/lafronterisima" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/lafronterisima">La Fronterisima</a></blockquote></div>
+		   
+		   </div>
+		 </div>
+		
+
+		  <div class="caja-portfolios">
+           <h3>FAN CHAT</h3>	
+  		
+		    <div class="fb_background">	
+			
+            <div class="fb-comments" data-href="https://www.facebook.com/BuenavistaSt" data-width="100%" data-numposts="3"></div>
+	      
+		  </div>
+		  
+		 </div>
+		  
+     </section>	
+	 
+	 
+	 
+   <section class="carousels-radio" scrollflow -slide-top">
+
+    <h2>PUBLICIDAD</h2>
+
+    <div class="owl-carousels owl-theme">
+     
+      <div class="items">
+          <img src="imagenes/cuñas/carniceria.jpg"> 
+      
+      
+       <div class="contents">
+          <div class="titles"> "Los Tatis"</div>
+          
+           <p>Ofrecemos la mejor carne de res y de cerdo, pollo semicriollo, cachamas, tilapia y el mejor queso de la región.</p>	 	
+		
+       
+        </div>
+    
+     </div>
+	 
+	 
+	   <div class="items">
+          <img src="imagenes/cuñas/El baraton.jpg">  
+      
+      
+       <div class="contents">
+            <div class="titles">"El Baratón"</div>
+          
+          <p>Surtido variado de víveres, granos, productos de aseos, lácteos, con grandes promociones.
+		      Contamos con un pack de Bancolombia y un pack del Banco Agrario.</p>	 
+
+		</div>
+    
+     </div>
+     
+	 
+     
+      <div class="items">
+        <img src="imagenes/cuñas/Ortodoncia.jpg"> 
+      
+      
+       <div class="contents">
+          <div class="titles">Centro Odontológico</div>
+          
+          <p>Se cuenta con servicios de calidad, buen precio y excelente atención:
+     		   Ordotoncia, blanqueamiento dental, coronas, diseño de sonrisa, implantes,
+			   cirugía oral. Contácto: 3104129056.</p>
+			   
+        </div>
+    
+     </div>
+	  
+    </div>
+    
+    
+  </section>
+
+
+
+  <script src="owl/owl.carousel.min.js"></script>
+
+  <script>
+    $('.owl-carousels').owlCarousel({
+      margin: 15,
+       loop: true,
+       autoplay:true,
+      nav: true,
+      navText: [""],
+      responsive: {
+        0: {
+          items: 1
+        },
+        580: {
+          items: 2
+        },
+        1000: {
+          items: 3
+        }
+      }
+    });
+  </script>
+  
+	 
+	 
+	<!--	<section class="flexbox-videos" scrollflow -slide-top">
+	
+	   <div class="videos">
+	     <h4></h4>
+			
+				<div class="embed-res">
+				   <iframe class="embed-responsive-item" src="https://youtube.com/embed/W_qrpb-u18w"></iframe>
+				    
+				</div>
+				
+		</div>
+			
+		
+		<div class="videos">
+		   <h4></h4>
+		
+				<div class="embed-res">
+				   <iframe class="embed-responsive-item" src="https://youtube.com/embed/AT7HHYvbtq4"></iframe>
+				    
+				</div>
+
+	    </div>
+
+     </section> -->
+	 
+	 
+	 
+	 <section class="carousel-wrapper" id="novedad" scrollflow -slide-top">
+
+    <h2>Variedad</h2>
+
+    <div class="owl-carousels_1 owl-theme">
+      
+	  <div class="item">
+          <div class="productos_1 prod-first">  
+         <iframe id="players" class="embed-responsive-item" src="https://youtube.com/embed/hDVUOwoKTo0"></iframe>
+		 
+		 <script>
+     function myFunction() {
+    var x = document.getElementById("players");
+    var y = (x.contentWindow || x.contentDocument);
+    if (y.document)y = y.document;
+    y.body.sound.pause();
+}
+</script>
+		 
+	   </div>
+	   
+	   <div class="content">
+          <div class="title">Pop</div>
+          <div class="sub-title"></div>
+        </div>
+	   
+        </div>
+	  
+	 
+	 
+	    <div class="item">
+          <div class="productos_1 prod-first">  
+         <iframe id="players" class="embed-responsive-item" src="https://youtube.com/embed/ubHvNue4Ma4"></iframe>
+		
+		    <script>
+     function myFunction() {
+    var x = document.getElementById("players");
+    var y = (x.contentWindow || x.contentDocument);
+    if (y.document)y = y.document;
+    y.body.sound.pause();
+}
+</script>
+		 
+	   </div>
+	   
+	   <div class="content">
+          <div class="title">Norteña</div>
+          <div class="sub-title"></div>
+        </div>
+	   
+        </div>
+	  
+	  
+     
+    <div class="item">
+      <div class="productos_1 prod-first">  
+         <iframe id="players" class="embed-responsive-item" src="https://youtube.com/embed/W_qrpb-u18w"></iframe>
+		
+		  <script>
+     function myFunction() {
+    var x = document.getElementById("players");
+    var y = (x.contentWindow || x.contentDocument);
+    if (y.document)y = y.document;
+    y.body.sound.pause();
+}
+</script>
+		 
+	  </div>
+	   
+	   <div class="content">
+          <div class="title">Vallenato</div>
+          <div class="sub-title"></div>
+        </div>
+	   
+     </div>
+	  
+    </div>
+	
+	<script src="owl/owl.carousel.min.js"></script>
+
+  <script>
+    $('.owl-carousel').owlCarousel({
+      margin: 15,
+       loop: true,
+       autoplay: true,
+      nav: true,
+      navText: [""],
+      responsive: {
+        0: {
+          items: 1
+        },
+        580: {
+          items: 2
+        },
+        1000: {
+          items: 3
+        }
+      }
+    });
+  </script>
+    
+  </section> 
+  
+  
+  
+   <section class="carousel_lock scrollflow -slide-top">
+
+    <h3>LOCUTORES</h3>
+
+    <div class="owl-carousels_1 owl-theme">
+     
+     <div class="items">
+    
+	  <div class="productos_1 prod-first">  
+        <img src="imagenes/locutores/ramiro.jpg" alt="">
+        <div class="mask">  
+         <h2>Ramiro Carvajalino</h2>   
+         <p>Director, Periodísta y Locutor</p>
+         <p>Periodísta y locutor profesional, experiencia radial.</p>
+         <p>Contacto: +57 3206912307</p>	
+				   
+        <a class="info"><audio controls src="https://docs.google.com/uc?export=download&id="></a>
+		   
+		   
+	 <script>	
+         $(document).ready(function( $ ) {
+	       $('audio').on("play", function (me) {
+		    $('audio').each(function (i,e) {
+		    	if (e !== me.currentTarget) {
+				this.pause(); 
+			}
+		  });
+	   });
+      })
+    </script>
+	
+         </div>  
+       </div>
+	   
+     </div>
+	   
+	   
+	<div class="items">
+    
+	  <div class="productos_1 prod-first">  
+          <img src="imagenes/locutores/Felix Riveros.jpg" alt="">
+        <div class="mask">  
+         <h2>Félix Riveros</h2>  
+          <p>Locutor de Buenavista Estéreo.</p>
+		  <p>Animador con gran talento.</p>
+    
+          <p>Contacto:</p>
+	   
+        <a class="info"><audio controls src="https://docs.google.com/uc?export=download&id="></a>
+          
+    <script>	
+     $(document).ready(function( $ ) {
+	   $('audio').on("play", function (me) {
+		$('audio').each(function (i,e) {
+			if (e !== me.currentTarget) {
+				this.pause(); 
+			}
+		  });
+	   });
+      })
+    </script>
+	
+         </div>  
+       </div>
+	   
+     </div>
+	 
+	 
+     
+      <div class="items">
+    
+	  <div class="productos_1 prod-first">  
+         <img src="imagenes/locutores/oscar.jpg" alt=""> 
+        <div class="mask">  
+         <h2>Oskar C.</h2>  
+        <p>Diseño Web</p>
+	    <p>Una forma de llegar al corazón de los seguidores.</p>
+	    <p>Contacto: fronterisima12@gmail.com</p>	
+		
+       <a class="info">
+	    <audio controls src="https://docs.google.com/uc?export=">
+	   </a> 
+	   
+	<script>	
+     $(document).ready(function( $ ) {
+	   $('audio').on("play", function (me) {
+		$('audio').each(function (i,e) {
+			if (e !== me.currentTarget) {
+				this.pause(); 
+			}
+		  });
+	   });
+      })
+    </script>
+	   
+       </div>  
+       </div>
+	   
+      </div>
+    
+    </div>
+   
+</div> 
+
+
+
+  <script src="owl/owl.carousel.min.js"></script>
+
+  <script>
+    $('.owl-carousels_1').owlCarousel({
+      margin: 15,
+       loop: true,
+       autoplay:false,
+      nav: true,
+      navText: [""],
+      responsive: {
+        0: {
+          items: 1
+        },
+        580: {
+          items: 2
+        },
+        1000: {
+          items: 3
+        }
+      }
+    });
+  </script>
+  
+  
+  </section>
+  
+	 
+	
+	 <footer>
+		<div class="footer-container">
+			<div class="footer-main">
+				<div class="footer-columna">
+					<h3>Suscríbase</h3>
+				   <form action="" id="formulario">
+					  <input type="email" name="email" id="email" placeholder="Ingresa su correo" required>
+				      <textarea type="text" name="mensajes" id="mensajes" placeholder="Ingresa su mensaje" required></textarea>
+					  <input type="submit" id="submit" value="Enviar">
+				    </form>
+				   
+				</div>
+
+				<div class="footer-columna">
+					<h3>Dirección</h3>
+					<span class="fa fa-map-marker"><p> Barrio San Jose</p></span><br>
+					<span class="fa fa-envelope"> <a href="https://mail.google.com" target="_blank" style="color:white"><p>emisoraleonaradio@gmail.com</p></a></span><br>
+					<span class="fa fa-phone"> <a href="tel:+3206912307" style="color:white"> <p>+3022488780</p></a></span><br>
+					
+				</div>
+
+				<div class="footer-columna">
+					<h3>Nosotros</h3>
+					<p>Nuestro objetivo es informar a la comunidad con notas de interés y musica variada.
+					 <br><br>
+                      Los invitamos a seguirnos a tráves de las redes sociales.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-copy-redes">
+			<div class="main-copy-redes">
+				<div class="footer-copy">
+					 <h4> <span class="icon-headphones"> <a href="https://play.google.com/store/apps/details?id=com.asiserver.buenavista&hl=es_CO&gl=U" target="_blank" >Descarga: App Radio</a></span> </h4><br>
+				     <h4> <span class="icon-laptop"> <a class="copy"> Derechos &copy; Radio Leona</a></span></h4>
+				</div>
+				<div class="footer-redes">
+					<a href="https://www.facebook.com/BuenavistaSt" target="_blank" class="fa fa-facebook"></a>
+					<a href="" target="_blank" class="fa fa-instagram"></a>
+					<a href="https://www.twitter.com/@radioproduccio2" target="_blank" class="fa fa-twitter"></a>
+				</div>
+			</div>
+		</div>
+       
+    </footer>
+	
+
+ </article>
+
+ 
+    <article id='TURISMO' class='elemento'>
+	
+	  <div class="boxes-portfolio">
+	
+		<div class="caja-portfolio">	
+	
+            <h3>BUENAVISTA</h3>	
+			
+			 <p>El municipio de Buenavista fue fundado por José Francisco Rojas en el año 1950 en el centro-oriental del departamento de Córdoba.</p>	 
+         	
+			 <p>Según los antecedentes históricos su población tiene raices en la comunidad indigena de los Caribes.</p>	 
+         	
+			 <p>La población de nuestro municipio se estima en más 21.000 habitantes.</p>	 
+         	
+			 <p>Su relieve en gran parte es plano, esta regado por afluentes que le dan belleza al paisaje y permite el desarrollo del municipio.
+			 
+			 <p>Buenavista esta bordeado por el río San Jorge, su clima es agradable con una temperatura de 28ºc.</p>	
+			
+		</div>
+		
+		  <aside class="sidebar">
+
+	
+	  <div class="players video-player">
+    
+         <video id="videojs-http-source-selector-mute-player"  poster="imagenes/entrevista.jpg" class="video-js vjs-default-skin" controls>
+          <source src="https://firebasestorage.googleapis.com/v0/b/media-f4255.appspot.com/o/publicidad.mp4?alt=media&token=80ecfe2a-9e11-4402-b2eb-2f9e2af0aab3" type='application/x-mpegURL'>  
+			    <source src="videos/nature.mp4" type="video/mp4">
+	     </video>  
+      </div>
+
+ 					
+	</aside>
+
+  </div>
+	  
+	  
+	<section id="bloggers">
+     <h3>GEOGRAFÍA</h3>
+				
+	<div class="contenido_block">
+	
+		<article class="card_radio">
+		   <img src="imagenes/turismo/municipio.jpg">  
+		   <h4>Ubicación</h4>
+              <p>El municipio de Buenavista está ubicado en el Departamento de Córdoba.</p>		   
+             </article>
+					
+		<article class="card_radio">
+		  <img src="imagenes/turismo/cultura.jpg">
+		  <h4>Cultura</h4>	
+           <p>Nuestro territorio cuenta con una riqueza hídrica, cultural, fauna y flora.</p> 
+	    </article>
+					
+        <article class="card_radio">
+		  <img src="imagenes/turismo/economia.jpg">
+		 <h4>Economía</h4>  
+          <p>El sector económico se fundamenta en la pesca, el turísmo, la ganadería, entre otros.</p>
+
+	</article>
+   
+	 
+	 </div>
+	 			
+ </section>
+ 
+ 
+ 
+  <section id="bloggeros">
+		  <h3>TURISMO</h3>
+				
+	<div class="contenido_blocks">
+	
+		<article class="card_radio">
+		   <img src="imagenes/turismo/Puente San Jorge.jpg" alt="">   
+		  	   <h4>Puente San Jorge</h4>		
+            <p>Comunica a Buenavista con el interior del país. Un bonito lugar que los turístas pueden visitar y contemplar el río San Jorge que atraviesa nuestro municipio.</p>	   
+
+	   </article>
+					
+		<article class="card_radio">
+		  <img src="imagenes/turismo/iglesia.jpg" alt="">
+		 	    <h4>P. San Martin de Tours</h4>
+	       <p>Centro de devoción y de recogimiento para los católicos, vén y conoce su hermosa arquitectura.</p>	
+		</article>
+					
+	
+       <article class="card_radio">
+		 <img src="imagenes/turismo/finca recreo.jpg" alt="" >
+		  <h4>Finca de recreo</h4>
+	       <p> Un sitio de recreación y esparcimiento rodeado por naturaleza, para turístas y lugareños.</p>	
+	   </article>
+	   
+	   <article class="card_radio">
+		    <img src="imagenes/turismo/fauna.jpg" alt="" > 
+		     <h4>Parque Caimanes</h4>		
+	        <p> Apropiado para compartir en familia y amigos, en el recorrido podrás ver caimanes, iguanas entre otros, 
+				incluido el criadero de avestruz.</p>	
+		</article>
+					
+		<article class="card_radio">
+		    <img src="imagenes/turismo/Laguna de Marias.jpg" alt="" >
+		      <h4>Ciénagas "Las Marías"</h4>	
+	       <p>Importante sitio turístico y económico de nuestro municipio, se puede pasear en canoas y contemplar
+           el hermoso paisaje que circunda la majestuosa ciénaga.</p>	
+		</article>
+					
+	
+       <article class="card_radio">
+		  <img src="imagenes/turismo/plazoleta.jpg" alt="" >
+		    <h4>Plazoleta</h4>
+	       <p> Emblemático lugar de nuestro municipio, podrás disfrutar de una fantástica vista.</p>	
+	  </article>
+	 
+	 </div>
+	 			
+ </section>
+	   
+
+	 <footer>
+		<div class="footer-container">
+			<div class="footer-main">
+				<div class="footer-columna">
+					<h3>Suscríbase</h3>
+				      <form action="" id="formulario">
+					    <span class="fa fa-envelope"> <a href="https://mail.google.com" target="_blank" style="color:white"><p>emisoraleonaradio@gmail.com</p></a></span><br>
+					    <span class="fa fa-phone"> <a href="tel:+3206912307" style="color:white"> <p>+3022488780</p></a></span><br>
+					  </form> 
+				</div>
+
+				<div class="footer-columna">
+					<h3>Dirección</h3>
+					<span class="fa fa-map-marker"><p>Barrio San Jose</p></span><br>
+				 </div>
+
+				<div class="footer-columna">
+					<h3>Nosotros</h3>
+					<p>Nuestro objetivo es informar a la comunidad con notas de interés y musica variada.
+					 <br><br>
+                      Los invitamos a seguirnos a tráves de las redes sociales.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-copy-redes">
+			<div class="main-copy-redes">
+				<div class="footer-copy">
+					 <h4> <span class="icon-headphones"> <a href="https://play.google.com/store/apps/details?id=com.asiserver.buenavista&hl=es_CO&gl=U" target="_blank" >Descarga: App Radio</a></span> </h4><br>
+				     <h4> <span class="icon-laptop"> <a class="copy"> Derechos &copy; Radio Leona</a></span></h4>
+				</div>
+				<div class="footer-redes">
+					<a href="https://www.facebook.com/BuenavistaSt" target="_blank" class="fa fa-facebook"></a>
+					<a href="" target="_blank" class="fa fa-instagram"></a>
+					<a href="https://www.twitter.com/@radioproduccio2" target="_blank" class="fa fa-twitter"></a>
+				</div>
+			</div>
+		</div>
+       
+    </footer>
+
+	
+	 </article>
+	 
+	 
+	 	 
+  <article id='NOTAS' class='elemento'>
+	      
+		
+	  <div id="galeria">
+    
+    <section class="imagen-web">
+      <a class="example-image-link" id="lightbox-img" href="imagenes/galeria/cantante.jpg" data-lightbox="example-set" data-title="Locutor: Arlex Marín"><img class="example-image" src="imagenes/galeria/cantante.jpg"  title="Locución"></a>
+    </section>
+    <section class="imagen-web">
+      <a class="example-image-link" id="lightbox-img" href="imagenes/galeria/cantante.jpg" data-lightbox="example-set" data-title="Tomada por: Oscar C"><img class="example-image" src="imagenes/galeria/cantante.jpg" alt="#" title="Atardecer"/></a>
+    </section>
+    <section class="imagen-web">
+      <a class="example-image-link" id="lightbox-img" href="imagenes/galeria/cantante.jpg" data-lightbox="example-set" data-title="Paisaje"><img class="example-image" src="imagenes/galeria/cantante.jpg" alt="#" title="Paisaje"/></a>
+    </section>
+   
+
+    <!-- Galeria  2 -->
+    <section class="imagen-web">
+      <a class="example-image-link" id="lightbox-img" href="imagenes/galeria/cantante.jpg" data-lightbox="example-set" data-title="Actividades"><img class="example-image" src="imagenes/galeria/cantante.jpg" alt="#" title="Actividades"/></a>
+    </section>
+    <section class="imagen-web">
+      <a class="example-image-link" id="lightbox-img" href="imagenes/galeria/cantante.jpg" data-lightbox="example-set" data-title="Producciones"><img class="example-image" src="imagenes/galeria/cantante.jpg" alt="#" title="Producciones"/></a>
+    </section>
+    <section class="imagen-web">
+      <a class="example-image-link" id="lightbox-img" href="imagenes/galeria/cantante.jpg" data-lightbox="example-set" data-title="Paisajismo"><img class="example-image" src="imagenes/galeria/cantante.jpg" alt="#" title="Paisajismo"/></a>
+    </section>
+   
+
+    <!--Galeria 3 -->
+    <section class="imagen-web">
+      <a class="example-image-link" id="lightbox-img" href="imagenes/galeria/cantante.jpg" data-lightbox="example-set" data-title="Cultura"><img class="example-image" src="imagenes/galeria/cantante.jpg" title="Cultura"/></a>
+    </section>
+    <section class="imagen-web">
+      <a class="example-image-link" id="lightbox-img" href="imagenes/galeria/cantante.jpg" data-lightbox="example-set" data-title="Dj Music"><img class="example-image" src="imagenes/galeria/cantante.jpg" alt="#" title="Dj Music"/></a>
+    </section>
+    <section class="imagen-web">
+       <a class="example-image-link" id="lightbox-img" href="imagenes/galeria/cantante.jpg" data-lightbox="example-set" data-title="Cultura"><img class="example-image" src="imagenes/galeria/cantante.jpg" title="Cultura"/></a>
+    </section>
+	
+	 <!--Galeria 4 -->
+    <section class="imagen-web">
+      <a class="example-image-link" id="lightbox-img" href="imagenes/galeria/cantante.jpg" data-lightbox="example-set" data-title="Cultura"><img class="example-image" src="imagenes/galeria/cantante.jpg" title="Cultura"/></a>
+    </section>
+    <section class="imagen-web">
+      <a class="example-image-link" id="lightbox-img" href="imagenes/galeria/cantante.jpg" data-lightbox="example-set" data-title="Dj Music"><img class="example-image" src="imagenes/galeria/cantante.jpg" alt="#" title="Dj Music"/></a>
+    </section>
+    <section class="imagen-web">
+      <a class="example-image-link" id="lightbox-img" href="imagenes/galeria/cantante.jpg" data-lightbox="example-set" data-title="Pensamiento"><img class="example-image" src="imagenes/galeria/cantante.jpg" alt="#" title="Pensamiento"/></a>
+    </section>
+ 
+
+  </div>
+		
+
+	
+			
+	  <footer>
+			
+	 
+	  <footer>
+		<div class="footer-container">
+			<div class="footer-main">
+				<div class="footer-columna">
+					<h3>Suscríbase</h3>
+				      <form action="" id="formulario">
+					    <span class="fa fa-envelope"> <a href="https://mail.google.com" target="_blank" style="color:white"><p>emisoraleonaradio@gmail.com</p></a></span><br>
+					    <span class="fa fa-phone"> <a href="tel:+3206912307" style="color:white"> <p>+3022488780</p></a></span><br>
+					  </form> 
+				   
+				</div>
+
+				<div class="footer-columna">
+					<h3>Dirección</h3>
+					<span class="fa fa-map-marker"><p>Barrio San Jose</p></span><br>
+				</div>
+
+				<div class="footer-columna">
+					<h3>Nosotros</h3>
+					<p>Nuestro objetivo es informar a la comunidad con notas de interés y musica variada.
+					 <br><br>
+                      Los invitamos a seguirnos a tráves de las redes sociales.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-copy-redes">
+			<div class="main-copy-redes">
+				<div class="footer-copy">
+					 <h4> <span class="icon-headphones"> <a href="https://play.google.com/store/apps/details?id=com.asiserver.buenavista&hl=es_CO&gl=U" target="_blank" >Descarga: App Radio</a></span> </h4><br>
+				     <h4> <span class="icon-laptop"> <a class="copy"> Derechos &copy; Radio Leona</a></span></h4>
+				</div>
+				<div class="footer-redes">
+					<a href="https://www.facebook.com/BuenavistaSt" target="_blank" class="fa fa-facebook"></a>
+					<a href="" target="_blank" class="fa fa-instagram"></a>
+					<a href="https://www.twitter.com/@radioproduccio2" target="_blank" class="fa fa-twitter"></a>
+				</div>
+			</div>
+		</div>
+       
+    </footer>
+	
+	 
+	  </article>
+	  
+	  
+   <article id='RADIO' class='elemento'>	
+      	
+   
+<div class="map-responsive">
+  
+  <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+    src="https://maps.google.com/maps?width=100%25&height=600&hl=es&q=Barrio%20SanJose%20buenavista+()&t=&z=14&ie=UTF8&iwloc=B&output=embed">
+  </iframe>
+  
+  </div>
+
+   <div class="vis-responsive">
+  
+   <script type="text/javascript" src="//rf.revolvermaps.com/0/0/6.js?i=5a0ke5c5tt1&amp;m=7&amp;c=e63100&amp;cr1=ffffff&amp;f=arial&amp;l=0&amp;bv=90&amp;lx=-420&amp;ly=420&amp;hi=20&amp;he=7&amp;hc=a8ddff&amp;rs=80" async="async"></script>
+  
+  </div>
+
+
+	 <footer>
+		<div class="footer-container">
+			<div class="footer-main">
+				<div class="footer-columna">
+					<h3>Suscríbase</h3>
+				      <form action="" id="formulario">
+					  <span class="fa fa-envelope"> <a href="https://mail.google.com" target="_blank" style="color:white"><p>emisoraleonaradio@gmail.com</p></a></span><br>
+					  <span class="fa fa-phone"> <a href="tel:+3206912307" style="color:white"> <p>+3022488780</p></a></span><br>
+					  </form> 
+				   
+				</div>
+
+				<div class="footer-columna">
+					<h3>Dirección</h3>
+					<span class="fa fa-map-marker"><p> Barrio San Jose</p></span><br>
+				</div>
+
+				<div class="footer-columna">
+					<h3>Nosotros</h3>
+					<p>Nuestro objetivo es informar a la comunidad con notas de interés y musica variada.
+					 <br><br>
+                      Los invitamos a seguirnos a tráves de las redes sociales.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-copy-redes">
+			<div class="main-copy-redes">
+				<div class="footer-copy">
+					 <h4> <span class="icon-headphones"> <a href="https://play.google.com/store/apps/details?id=com.asiserver.buenavista&hl=es_CO&gl=U" target="_blank" >Descarga: App Radio</a></span> </h4><br>
+				     <h4> <span class="icon-laptop"> <a class="copy"> Derechos &copy; Radio Leona</a></span></h4>
+				</div>
+				<div class="footer-redes">
+					<a href="https://www.facebook.com/BuenavistaSt" target="_blank" class="fa fa-facebook"></a>
+					<a href="" target="_blank" class="fa fa-instagram"></a>
+					<a href="https://www.twitter.com/@radioproduccio2" target="_blank" class="fa fa-twitter"></a>
+				</div>
+			</div>
+		</div>
+       
+    </footer>
+
+	   		 
+ </article>
+ 
+ 
+   <div class="scrollup">
+			<a href="#"><i class="fa fa-chevron-up"></i></a>
+		</div>
+	     
+</section>
+
+   </main> 
+
+  
+  <script type="text/javascript" src="js/slider.js"></script>
+  <script type="text/javascript" src="js/header.js"></script>
+   <script src="js/envio.js"></script> 
+
+  <script src="js/imagesslider.js"></script>
+   <script src="js/imagesslider01.js"></script>
+  <script src="js/imagesslider1.js"></script>
+  <script src="js/imagesslider2.js"></script>
+  <script src="js/imagesslider3.js"></script>
+  <script type="text/javascript" src="js/header.js"></script>
+  
+  
+  <script src="js/script.js"></script>
+  <script type="text/javascript" src="js/navegar.js"></script>
+  <script type="text/javascript" src="js/menu.js"></script>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+  <script type="text/javascript" src="js/floating-wpp.js"></script>
+ 
+  <script src="js/prueba.js"></script>	
+  
+
+ </body>
+ 
+ 
+</html>
