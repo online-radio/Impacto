@@ -45,6 +45,23 @@
 	<script src="js/locutores.js"></script>
     
 	<script src="js/jquery 1.9.0.min.js"></script>
+	
+      <script>
+	
+       var mysound = document.getElementById("mysound");
+      
+          play.onclick = function() {
+            if (mysound.paused) {
+                mysound.play();
+                 play.src = "icon-pause";
+             }
+              else {
+                mysound.pause();
+                 play.src = "icon-play2";      
+              }
+        }
+
+	</script>
  
 </head>
 
@@ -62,15 +79,45 @@
 	
     <nav class="menu">	
 	  <div class="logo-box">
-	  
-       <div id="radios">
-         <h1 class="icon-earth"></h1>
-      </div>
-	  
-	  
+	    
       <h1 class="logo"><span></span></h1> 
        <span class="btn-menu"><i class="icon-menu"></i></span>
      </div>
+	 
+	 
+	  <div id="radio">
+	      <audio id="track">
+            <source src="http://stream.zeno.fm/t100n9re6bruv">
+		  </audio>
+		   
+		  <div id="ppbutton">
+		     <div id="play-pause" class="play"></div>
+		 </div>
+      </div>
+	  
+	 <script>
+	    
+       var track = document.getElementById('track');
+       var controlBtn = document.getElementById('play-pause');
+
+       function playPause() {
+         if (track.paused) {
+         track.play();
+      
+        controlBtn.className = "pause";
+          } else { 
+        track.pause();
+      
+        controlBtn.className = "play";
+         }
+       }
+
+        controlBtn.addEventListener("click", playPause);
+        track.addEventListener("ended", function() {
+        controlBtn.className = "play";
+     });
+    </script>
+	
      
 	<div class="nav-menu" class="menu-fixed">
 	
@@ -111,108 +158,41 @@
   
    
      <article id="EMISORA" class="elemento visible">
-    
-      <div class="caja-matrix">
-	
-		<div class="caja-texto">
-	
-         <div class="box-testimonio">
-           <div class="card-testimonio">
-         
-           <div class="testimonio-text">
-         <h4>EMISORA</h4>
-         <p>Somos una radio comunitaria al servicio del municipio de Buenavista y sus alrededores. Nuestro propósito es informar a traves del magazín
-            y de contenido social, junto a la variada programación músical.<br>
-		   Los invitamos a seguirnos, para que juntos construyamos una radio pluralista.</p>
-         </div>
-        </div>
-
-      </div>
 	 
-	</div>
- 
-		
-	  
-	  <aside>
-	  
-	  	
-	  <script>
-
-        $(document).ready(function(){
-            var stream = {
-            title: "Radio Leona",
-            mp3: "https://one.cloudstreaming.eu/proxy/buenavista/stream"	                    	
-         },
-        ready = false;
-          $("#jquery_jplayer_1").jPlayer({
-          ready: function (event) {
-            ready = true;
-                $(this).jPlayer("setMedia", stream).jPlayer("play");
-  
-            },
-            pause: function() {
-                $(this).jPlayer("clearMedia");
-            },
-            error: function(event) {
-                if(ready && event.jPlayer.error.type === $.jPlayer.error.URL_NOT_SET) {
-                    
-                    $(this).jPlayer("setMedia", stream).jPlayer("play");
-                }
-            },
-            swfPath: "/js",  
-            supplied: "mp3",
-	        autoplay: "true",
-            preload: "auto",
-            wmode: "window",
-            keyEnabled: true,
-            cssSelectorAncestor: "",
-            cssSelector: {
-            play: "#play",
-            pause: "#pause",
-            },
-        });
-      });
-   
-	</script>
-
+	 
+	   <section class="boxes-portfolio scrollflow -slide-top">	
 	
-          <div align="left"></div>
-          
-		      <div id="player">
-                <div id="logo">
-                  <div align="left"><img src="imagenes/logo.png" alt="" width="100" height="100"></div>
-                </div>
-
-                <a href="javascript:;" id="play"></a><a href="javascript:;" id="pause"></a>
-                <div id="titulo">
-               
-                </div>
-               
-			     <div id="titulo">
-                  <h3>stream live</h3>
-                 </div>
-          		
-                 
-                  <div id="song" class="song"><marquee scrollamount="6" behavior="scroll" direction="left"><span id="current-track">Radio Leona 91.0</span></marquee></div>
-                
-                <div id="animation">
-                   <div align="left"><img src="imagenes/ecualizador.gif" alt="" width="155" height="50"></div>
-                </div>
-         
+     
+    
+        <section class="inicio-matrix">	
+	      
+           <div class="caja-matrix">
             
-			</div>
+			<h3>LA FRONTERÍSIMA</h3>	
+		
+			<p>La Fronterísima una plataforma virtual, para compartir en este medio, temas musicales de artistas Colombianos e Hispanomericanos.</p>		
+            <p>Presentar el portafolio artístico, para eventos nacionales.</p>			
+			<p>Escúchala, gózala y siéntela, deja que la música fluya en ti.</p>
+            <p>Síguenos a través de las redes sociales.</p>
 			
+			<p> <a href="https://www.facebook.com/lafronterisima" target="_blank" style="color:white">1. Facebook</a><br><br>
+                <a href="https://www.youtube.com/channel/UC3br-XVsFC1-vsGzco5H32w" target="_blank" style="color:white">2. Youtube </a><br><br>
+				<a href="https://instagram.com/lafronterisimaonlain?igshid=8ya0xso968un" target="_blank" style="color:white">3. Instagram</a></p>
+	           <br>
+			   
+	        </div>
 			
-			 <div id="jquery_jplayer_1" class="jp-jplayer"></div>
-			 
-			 <script type="text/javascript">
-              setTimeout(function(){radioTitle();}, 2000);
-              setInterval(function(){radioTitle();}, 10000);
-             </script> 
-              					
-	     </aside>
+	
+		  <aside class="videos" >
 
-	</div>
+		     <div class="video-responsive">
+
+		       <iframe src="https://youtube.com/embed/j9Sp9UDIiv4"></iframe>
+		      </div>
+		   
+	      </aside>
+
+     </section>	
  
  
 	<section class="boxes-portfolios" id="fans" scrollflow -slide-top">	
@@ -222,7 +202,7 @@
 
            <div class="fb_background">		   
   		
-          <div class="fb-page" data-href="https://www.facebook.com/BuenavistaSt" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/lafronterisima" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/lafronterisima">La Fronterisima</a></blockquote></div>
+          <div class="fb-page" data-href="https://www.facebook.com/profile.php?id=100089881964085" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/lafronterisima" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/lafronterisima">La Fronterisima</a></blockquote></div>
 		   
 		   </div>
 		 </div>
@@ -233,7 +213,7 @@
   		
 		    <div class="fb_background">	
 			
-            <div class="fb-comments" data-href="https://www.facebook.com/BuenavistaSt" data-width="100%" data-numposts="3"></div>
+            <div class="fb-comments" data-href="https://www.facebook.com/profile.php?id=100089881964085" data-width="100%" data-numposts="3"></div>
 	      
 		  </div>
 		  
@@ -360,27 +340,32 @@
 
     <div class="owl-carousels_1 owl-theme">
       
-	  <div class="item">
-          <div class="productos_1 prod-first">  
-         <iframe id="players" class="embed-responsive-item" src="https://youtube.com/embed/hDVUOwoKTo0"></iframe>
+	   <div class="item">
+      <div class="productos_1 prod-first">  
+         <iframe id="players" class="embed-responsive-item" src="https://youtube.com/embed/W_qrpb-u18w"></iframe>
+		
+		   <script>	
+     $(document).ready(function( $ ) {
+	   $('#players').on("play", function (me) {
+		$('#players').each(function (i,e) {
+			if (e !== me.currentTarget) {
+				this.pause(); 
+			}
+		  });
+	   });
+      })
+    </script>
 		 
-		 <script>
-     function myFunction() {
-    var x = document.getElementById("players");
-    var y = (x.contentWindow || x.contentDocument);
-    if (y.document)y = y.document;
-    y.body.sound.pause();
-}
-</script>
-		 
-	   </div>
+	  </div>
 	   
-	   <div class="content">
-          <div class="title">Pop</div>
+	    <div class="content">
+          <div class="title">Norteña</div>
           <div class="sub-title"></div>
+		  <p>Se cuenta con servicios de calidad, buen precio y excelente atención</p> 
+		  
         </div>
-	   
-        </div>
+		
+     </div>
 	  
 	 
 	 
@@ -388,20 +373,25 @@
           <div class="productos_1 prod-first">  
          <iframe id="players" class="embed-responsive-item" src="https://youtube.com/embed/ubHvNue4Ma4"></iframe>
 		
-		    <script>
-     function myFunction() {
-    var x = document.getElementById("players");
-    var y = (x.contentWindow || x.contentDocument);
-    if (y.document)y = y.document;
-    y.body.sound.pause();
-}
-</script>
+		   <script>	
+     $(document).ready(function( $ ) {
+	   $('#players').on("play", function (me) {
+		$('#players').each(function (i,e) {
+			if (e !== me.currentTarget) {
+				this.pause(); 
+			}
+		  });
+	   });
+      })
+    </script>
 		 
 	   </div>
 	   
 	   <div class="content">
           <div class="title">Norteña</div>
           <div class="sub-title"></div>
+		  <p>Se cuenta con servicios de calidad, buen precio y excelente atención</p> 
+		  
         </div>
 	   
         </div>
@@ -412,22 +402,27 @@
       <div class="productos_1 prod-first">  
          <iframe id="players" class="embed-responsive-item" src="https://youtube.com/embed/W_qrpb-u18w"></iframe>
 		
-		  <script>
-     function myFunction() {
-    var x = document.getElementById("players");
-    var y = (x.contentWindow || x.contentDocument);
-    if (y.document)y = y.document;
-    y.body.sound.pause();
-}
-</script>
+		   <script>	
+     $(document).ready(function( $ ) {
+	   $('#players').on("play", function (me) {
+		$('#players').each(function (i,e) {
+			if (e !== me.currentTarget) {
+				this.pause(); 
+			}
+		  });
+	   });
+      })
+    </script>
 		 
 	  </div>
 	   
-	   <div class="content">
-          <div class="title">Vallenato</div>
+	    <div class="content">
+          <div class="title">Norteña</div>
           <div class="sub-title"></div>
+		  <p>Se cuenta con servicios de calidad, buen precio y excelente atención</p> 
+		  
         </div>
-	   
+		
      </div>
 	  
     </div>
@@ -456,6 +451,56 @@
   </script>
     
   </section> 
+  
+  
+  <section class="flexbox-video scrollflow -slide-top">
+	
+	   <div class="video">
+	     <h4 class="center">PODCAST'S</h4>
+		  <div class="postcast">
+
+         <iframe id="sc-widget" src="https://w.soundcloud.com/player/?url=https://api.soundcloud.com/users/125486431/favorites" width="100%" height="auto" scrolling="yes" frameborder="no"></iframe>
+
+          <script type="text/javascript">
+            (function(){
+             var widgetIframe = document.getElementById('sc-widget'),
+             widget = SC.Widget(widgetIframe);
+
+             widget.bind(SC.Widget.Events.READY, function() {
+             widget.bind(SC.Widget.Events.PLAY, function() {
+     
+             widget.getCurrentSound(function(currentSound) {
+             console.log('sound ' + currentSound.get('') + 'began to play');
+            });
+          });
+     
+          widget.getVolume(function(volume) {
+          console.log('current volume value is ' + volume);
+          });
+ 
+         widget.setVolume(95);
+     
+        });
+
+      }());
+     </script>
+
+   </div>
+		
+		</div>
+			
+		
+		<div class="video">
+		   <h4 class="center">PROMO</h4>
+		   <div class="youtube-player">
+		   
+		   <iframe id="sc-widget" src="https://youtube.com/embed/bJn26FVDWSU"></iframe>
+		   
+		   </div>
+		  
+	    </div>
+
+     </section>
   
   
   
