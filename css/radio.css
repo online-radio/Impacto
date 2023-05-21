@@ -51,7 +51,7 @@ main {
 }
 
 .menu{
-    width:99.8%;
+    width:100%;
     position: fixed;
     margin-left:px;
     height: 60px;
@@ -155,10 +155,11 @@ main {
 }
 
 .menu{
-    width:99.2%;
+    width:100%;
     position: fixed;
-    margin-left:3px;
+    margin-left:px;
     height: 60px;
+	top:0;
     color:white;
     display: flex;
     justify-content: space-between;
@@ -327,16 +328,17 @@ main {
 	
 	
 	.menu{
-    margin-left:2px;
-    width:99.5%;
+    width:100%;
+    position: fixed;
+    margin-left:px;
     height: 60px;
+	top:0;
     color:white;
-	margin-left:0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index:3;
-    background-color:blue;
+	background-color:blue;
 }
 
     .btn-menu .fa-times{color:orange;}
@@ -489,16 +491,17 @@ main {
     }
 	
 	.menu{
-    margin-left:2px;
-    width:99.5%;
+     width:100%;
+    position: fixed;
+    margin-left:px;
     height: 60px;
+	top:0;
     color:white;
-	margin-left:0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index:3;
-    background-color:blue;
+	background-color:blue;
 }
 
     .btn-menu .fa-times{color:orange;}
@@ -653,16 +656,17 @@ main {
     }
 	
 	.menu{
-    margin-left:2px;
-    width:99.5%;
+    width:100%;
+    position: fixed;
+    margin-left:px;
     height: 60px;
+	top:0;
     color:white;
-	margin-left:0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index:3;
-    background-color:blue;
+	background-color:blue;
 }
 
     .btn-menu .fa-times{color:orange;}
@@ -903,18 +907,22 @@ article .elemento {
 
   .inicio-matrix{
 
-            width:98.5%;
-			height:auto;
-			padding-top:10px;
-			background:url(../imagenes/);
-			background-color:  #272727;
-			display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-			margin-bottom:10px;
-			margin: 0 auto;
+    width:98%;
 
-		}
+	height:auto;
+
+    text-align: center; 
+
+	margin: 0 auto;
+
+	display:flex;
+	
+	margin-top:60px;
+	margin-bottom:10px;
+	
+	background-color:#272727;
+
+}
 
 		
 
@@ -962,7 +970,7 @@ article .elemento {
 
 		padding-top:10px;
 
-		font-size:20px;
+		font-size:25px;
 
 		}
 
@@ -987,7 +995,8 @@ article .elemento {
 		}
 
 
-  aside{
+ 
+  .videos{
 	display: inline-block;
 	background:url(../imagenes/.jpg);
 	width:45%;
@@ -997,7 +1006,7 @@ article .elemento {
     margin:0 auto;	
 }
 		
-  aside .video-responsive{
+  .videos .video-responsive{
     position:relative;
     width: 100%;
     height: 100%;
@@ -1040,25 +1049,20 @@ article .elemento {
 
 .inicio-matrix{
 
-			width:98%;
+    width:98%;
 
-			height:auto;
+	height:auto;
 
-			padding-top:10px;
+    text-align: center; 
 
-			background-color:#272727;
+	margin: 0 auto;
 
-			display: flex;
-
-            justify-content: center;
-
-            flex-wrap: wrap;
-
-			margin-bottom:5px;
-
-			margin: 0 auto;
-			
-			padding-bottom:10px;
+	display:flex;
+	
+	margin-top:60px;
+	margin-bottom:10px;
+	
+	background-color:#272727;
 
 		}
 
@@ -1099,11 +1103,13 @@ article .elemento {
 
 		text-align:center;
 
-		color:white;
+		color:red;
+		
+		font-family:courier,arial,helvética;
 
 		padding-top:10px;
 
-		font-size:20px;
+		font-size:25px;
 
 		}
 
@@ -1127,46 +1133,30 @@ article .elemento {
 		}
 
 
-  aside{
-
+  .videos{
 	display: inline-block;
-
 	background:url(../imagenes/.jpg);
-
 	width:45%;
-
 	height:auto;
-
-    margin-bottom:3px;	
-
+	padding-top:20px;
+    margin-bottom:3px;
+    margin:0 auto;	
 }
-	
-
-  aside .video-responsive{
-
+		
+  .videos .video-responsive{
     position:relative;
-
-    width: 100%;
-
-    height: 100%;
-
+    width:98%;
+    height:350px;
     background: transparent;
-
 }
 
+  .video-responsive iframe{
 
-.video-responsive iframe{
-
-   position: absolute;
-
+   position: ;
    top:-15px;
-
    left: 0;
-
    width: 100%;
-
-   height:96%;
-
+   height:350px;
 }
 
 
@@ -1224,13 +1214,13 @@ article .elemento {
 
    .inicio-matrix{
 
-      width:98.5%;
+      width:97%;
 
 	  height:auto;
 
 	  margin:0 auto;
 
-	  padding-top:10px;
+	  margin-top:60px;
 
 	  background-color:#272727;
 
@@ -1286,9 +1276,9 @@ article .elemento {
 
 		padding-top:30px;
 
-		color:white;
+		color:red;
 
-		
+		 font-family:courier,arial,helvética;
 
 		}
 
@@ -1312,7 +1302,7 @@ article .elemento {
 		}
 
 
-    aside{
+    .videos{
 
 	display: inline-block;
 
@@ -1322,14 +1312,16 @@ article .elemento {
 
 	height:350px;
 
-    margin-bottom:3px;	
+    padding-top:30px;
+	
+    margin-bottom:10px;	
 
 	margin:0 auto;
 
 }
 	
 
-  aside .video-responsive{
+ .videos .video-responsive{
 
     position:relative;
 
@@ -1350,8 +1342,8 @@ article .elemento {
 }
 
 
-  aside .video-responsive iframe{
-
+  .video-responsive iframe{
+ 
     position: absolute;
 
     top:0;
@@ -1423,15 +1415,16 @@ article .elemento {
 	
  @media (min-width:480px)and (max-width:860px){	
 
-    .inicio-matrix{
+     .inicio-matrix{
 
-      width:98%;
+    
+      width:97%;
 
 	  height:auto;
 
-	  padding-top:5px;
-
 	  margin:0 auto;
+
+	  margin-top:60px;
 
 	  background-color:#272727;
 
@@ -1441,23 +1434,19 @@ article .elemento {
 
       flex-wrap: wrap;
 
-	  align-items:flex-start;
-
 	  flex-direction:column;
 
-	  margin-bottom:5px;
-	  
 	  padding-bottom:10px;
 
-	}
+		}
 
 		
 
-	.caja-matrix{
+		.caja-matrix{
 
-		  width:98%;
+		  width:95%;
 
-		  padding-top:5px; 
+		  padding-top:10px; 
 
 		  background:url(../imagenes/diseñador.jpg);
 
@@ -1465,44 +1454,25 @@ article .elemento {
 
 		  margin:0 auto;
 
-		  margin-bottom:10px;
-
-	
 		}
 
 		
-
-		.caja-matrix h2{
-
-		text-align:center;
-
-		color:white;
-
-		padding-top:10px;
-
-		font-size:14px;
-
-		}
-
-		
-
 		.caja-matrix h3{
 
 		text-align:center;
 
-		color:white;
+		padding-top:30px;
 
-		padding-top:5px;
+		color:red;
 
-		font-size:23px;
+		 font-family:courier,arial,helvética;
 
 		}
 
 		
+		.caja-matrix p{
 
-		 .inicio-matrix .caja-matrix p{
-
-		  width:90%;
+		  width:95%;
 
 		  text-align:center;
 
@@ -1518,7 +1488,8 @@ article .elemento {
 
 		}
 
-  aside{
+
+   .videos{
 
 	display: inline-block;
 
@@ -1528,49 +1499,66 @@ article .elemento {
 
 	height:350px;
 
-    margin-bottom:3px;	
+    padding-top:30px;
+	
+    margin-bottom:10px;	
 
 	margin:0 auto;
 
 }
+	
 
-		
-
-  aside .video-responsive{
+  .videos .video-responsive{
 
     position:relative;
 
     width: 100%;
 
-    height:100%;
+    height: 100%;
+
+	margin:0 auto;
 
     background: transparent;
+
+	display: flex;
+
+      justify-content: center;
+
+      flex-wrap: wrap;
 
 }
 
 
-
-  aside .video-responsive iframe{
-
+  .videos .video-responsive iframe{
+ 
     position: absolute;
 
     top:0;
 
     width: 100%;
 
-    height: 95%;
+    height:100%;
+
+	margin:0 auto;
+
+	display: flex;
+
+      justify-content: center;
+
+      flex-wrap: wrap;
 
    }
 
    
+    .publicidades{
 
-     .publicidades{
+	width:88%;
 
-	width:92%;
-
-	height:230px;
+	height:250px;
 
 	text-align: center;
+
+	color:blue;	
 
 	padding-top:15px;
 
@@ -1578,17 +1566,15 @@ article .elemento {
 
 	background-color:black;	
 
-	margin-bottom:20px;	
+	margin-bottom:10px;	
 
 }
-
-
 
 .adsbygoogle{
 
 	display: flex;
 
-	width:97%;
+	width:85%;
 
 	height:220px;
 
@@ -1604,9 +1590,9 @@ article .elemento {
 
 	margin: 0 auto;	
 	
-	 z-index:0; 
+	 z-index:0;   
 
- }
+  }
 
 }
 
@@ -1614,17 +1600,18 @@ article .elemento {
 
 /* Reproductor Responsive 346px a 479px */
 
- @media (min-width:346px)and (max-width:479px){	
+ @media (min-width:320px)and (max-width:479px){	
 
     .inicio-matrix{
 
-      width:98%;
+    
+      width:97%;
 
 	  height:auto;
 
-	  padding-top:5px;
-
 	  margin:0 auto;
+
+	  margin-top:60px;
 
 	  background-color:#272727;
 
@@ -1634,23 +1621,19 @@ article .elemento {
 
       flex-wrap: wrap;
 
-	  align-items:flex-start;
-
 	  flex-direction:column;
 
-	  margin-bottom:5px;
-	  
 	  padding-bottom:10px;
 
-	}
+		}
 
 		
 
-	.caja-matrix{
+		.caja-matrix{
 
-		  width:98%;
+		  width:95%;
 
-		  padding-top:5px; 
+		  padding-top:10px; 
 
 		  background:url(../imagenes/diseñador.jpg);
 
@@ -1658,40 +1641,25 @@ article .elemento {
 
 		  margin:0 auto;
 
-		  margin-bottom:10px;
-
-	
 		}
 
 		
-
-		.caja-matrix h2{
-
-		text-align:center;
-
-		color:white;
-
-		padding-top:10px;
-
-		font-size:14px;
-
-		}
-
 		.caja-matrix h3{
 
 		text-align:center;
 
-		color:white;
+		padding-top:30px;
 
-		padding-top:5px;
+		color:red;
 
-		font-size:23px;
+		 font-family:courier,arial,helvética;
 
 		}
 
-		 .inicio-matrix .caja-matrix p{
+		
+		.caja-matrix p{
 
-		  width:90%;
+		  width:95%;
 
 		  text-align:center;
 
@@ -1707,7 +1675,8 @@ article .elemento {
 
 		}
 
-  aside{
+
+   .videos{
 
 	display: inline-block;
 
@@ -1717,244 +1686,66 @@ article .elemento {
 
 	height:350px;
 
-    margin-bottom:3px;	
+	padding-top:30px;
+	
+    margin-bottom:10px;	
 
 	margin:0 auto;
 
 }
-
 	
-  aside .video-responsive{
+
+  .videos .video-responsive{
 
     position:relative;
 
     width: 100%;
 
-    height:100%;
-
-    background: transparent;
-
-}
-
-
-
-  aside .video-responsive iframe{
-
-    position: absolute;
-
-    top:0;
-
-    width: 100%;
-
-    height: 95%;
-
-   }
-
-   
-
-     .publicidades{
-
-	width:92%;
-
-	height:230px;
-
-	text-align: center;
-
-	padding-top:15px;
+    height: 100%;
 
 	margin:0 auto;
 
-	background-color:black;	
-
-	margin-bottom:20px;	
-
-}
-
-
-
-.adsbygoogle{
+    background: transparent;
 
 	display: flex;
-
-	width:97%;
-
-	height:220px;
-
-	justify-content: center;
-
-	flex-wrap: wrap;
-
-	background-color:;
-
-	padding-top:8px;
-
-    margin-bottom:15px;
-
-	margin: 0 auto;	
-	
-	 z-index:0; 
-
- }
-
-}
-
-  
-
-/* Reproductor Responsive 320px a 345px */
-
-		  
- @media (min-width:320px)and (max-width:345px){	
-
-     .inicio-matrix{
-
-      width:98%;
-
-	  height:auto;
-
-	  padding-top:5px;
-
-	  margin:0 auto;
-
-	  background-color:#272727;
-
-	  display: flex;
 
       justify-content: center;
 
       flex-wrap: wrap;
 
-	  align-items:flex-start;
-
-	  flex-direction:column;
-
-	  margin-bottom:5px;
-	  
-	  padding-bottom:5px;
-
-	}
-
-		
-	.caja-matrix{
-
-		  width:98%;
-
-		  padding-top:5px; 
-
-		  background:url(../imagenes/diseñador.jpg);
-
-		  height:auto;
-
-		  margin:0 auto;
-
-		  margin-bottom:10px;
-
-  }
-
-		
-
-		.caja-matrix h2{
-
-		text-align:center;
-
-		color:white;
-
-		padding-top:10px;
-
-		font-size:14px;
-
-		}
-
-		
-
-		.caja-matrix h3{
-
-		text-align:center;
-
-		color:white;
-
-		padding-top:5px;
-
-		font-size:20px;
-
-		}
-
-		
-
-		.inicio-matrix .caja-matrix p{
-
-		  width:90%;
-
-		  text-align:center;
-
-		  color:white;
-
-		  text-align:justify;
-
-		  padding-top:25px;
-
-		  margin:0 auto;
-
-		  font-size:14px;
-
-		}
-
-
-		aside{
-
-			width:98%;
-
-			height:350px;
-
-			margin-top:3px;
-
-			margin-bottom:0px;
-
-			display: flex;
-
-            justify-content: center;
-
-            flex-wrap: wrap;
-
-			background:url(../imagenes/.jpg);
-
-			margin: 0 auto;		
-
-		}
-
-
-  aside .video-responsive{
-
-    position:relative;
-
-    width: 100%;
-
-    height:100%;
-
-    background: transparent;
-
 }
 
 
-  aside .video-responsive iframe{
-
+  .videos .video-responsive iframe{
+ 
     position: absolute;
 
     top:0;
 
     width: 100%;
 
-    height: 95%;
+    height:100%;
+
+	margin:0 auto;
+
+	display: flex;
+
+      justify-content: center;
+
+      flex-wrap: wrap;
 
    }
 
+   
+    .publicidades{
 
-   .publicidades{
+	width:88%;
 
-	width:95%;
-
-	height:230px;
+	height:250px;
 
 	text-align: center;
+
+	color:blue;	
 
 	padding-top:15px;
 
@@ -1962,17 +1753,15 @@ article .elemento {
 
 	background-color:black;	
 
-	margin-bottom:20px;	
+	margin-bottom:10px;	
 
 }
 
-
-
-  .adsbygoogle{
+.adsbygoogle{
 
 	display: flex;
 
-	width:97%;
+	width:85%;
 
 	height:220px;
 
@@ -1988,11 +1777,15 @@ article .elemento {
 
 	margin: 0 auto;	
 	
-	 z-index:0;
+	 z-index:0;   
 
- }
+  }
 
-}	
+}
+
+
+
+
 	
 /*Section de Comerciales- informacion*/
 
@@ -2369,7 +2162,7 @@ article .elemento {
 		}
 		
 		.sidebar video{
-         width:90%;
+         width:98%;
 		 height:280px;
          padding-top:0px;
 		 display: flex;
@@ -2446,7 +2239,7 @@ article .elemento {
  		
 	.sidebar{
 	  width:90%;
-	  height:330px;
+	  height:350px;
 	  padding-top:10px;
 	  margin:0 auto;
   	  background:url(../imagenes/elemento.jpg);
@@ -2463,7 +2256,7 @@ article .elemento {
 		
 	 .sidebar video{
         width:85%;
-        height:300px;
+        height:350px;
         padding-top:3%;
 		 display: flex;
 	     justify-content: center;
@@ -2471,7 +2264,7 @@ article .elemento {
          margin-left: 0 auto;
 	  }
 	  
-	  .sidebar #videojs-http-source-selector-mute-player{
+	  .sidebar #players{
 	  width:93%;
 	  height:330px;
   	  background:url(../imagenes/elemento.jpg);
@@ -2560,14 +2353,14 @@ article .elemento {
 	 .sidebar video{
         width:85%;
         height:300px;
-        padding-top:3%;
+        padding-top:10px;
 		 display: flex;
 	     justify-content: center;
 	     flex-wrap: wrap;
          margin-left: 0 auto;
 	  }
 	  
-	  .sidebar #videojs-http-source-selector-mute-player{
+	  .sidebar #players{
 	  width:93%;
 	  height:330px;
   	  background:url(../imagenes/elemento.jpg);
@@ -2636,11 +2429,11 @@ article .elemento {
 		}	
  		
 	.sidebar{
-	  width:90%;
-	  height:330px;
-	  padding-top:-15px;
+	  width:95%;
+	  height:auto;
+	  padding-top:10px;
 	  margin:0 auto;
-  	  background:url(../imagenes/elemento.jpg);
+  	  background:url(../imagenes/.jpg);
 	  text-align:center;
 	  justify-content: center;
 	  flex-wrap: wrap;
@@ -2649,36 +2442,37 @@ article .elemento {
 	 .sidebar h3{
 	   text-align:center;
 	   color:white;
-	   padding-top:30px;
+	   padding-top:0px;
 	 }
 		
 	 .sidebar video{
-        width:90%;
-        height:300px;
-        padding-top:;
+        width:85%;
+        height:auto;
+        padding-top:10px;
 		 display: flex;
 	     justify-content: center;
 	     flex-wrap: wrap;
-         margin-left: 0 auto;
+         margin: 0 auto;
 	  }
 	  
-	  .sidebar #videojs-http-source-selector-mute-player{
-	  width:100%;
-	  height:330px;
-  	  background:url(../imagenes/elemento.jpg);
+	  .sidebar #players{
+	  width:93%;
+	  height:300px;
+  	  background:url(../imagenes/.jpg);
 	  text-align:center;
 	  justify-content: center;
-	  flex-wrap: wrap; 
-	  margin-left:0px;
-      padding-top:0px;
+	  display: flex;
+	  padding-top:10px,
+	  justify-content: center;
+	  flex-wrap: wrap;
+      margin: 0 auto;
 	  }
      }
 	 
 
 @media (min-width:320px)and (max-width:479px){
   
- 
-  .boxes-portfolio{
+   .boxes-portfolio{
 	  width:97%;
 	  height:auto;
 	  background:url(../imagenes/imag.jpg);
@@ -2687,20 +2481,23 @@ article .elemento {
       flex-wrap: wrap;
 	  align-items:flex-start;
 	  flex-direction:column;
-	  margin:0 auto;
+	   margin:0 auto;
 	  padding-bottom:20px;
 	 }
 	 
     .caja-portfolio{
 		  width:95%;
+		  height:350px;
 		  padding-top:20px;
-		  margin-left:8px;
+		  margin:0 auto;
 		}	
 
     .caja-portfolio h3{
 		text-align:center;
-		font-family:courier,arial,helvética;
+		color:red;
 		font-size:25px;
+		font-family:courier,arial,helvética;
+	
 		}
 		
     .caja-portfolio p{
@@ -2711,45 +2508,42 @@ article .elemento {
 		 padding-top:20px;
 		 text-align:justify;
 		 font-size:15px;
-		 padding-bottom:5px;
-		}		
+		 padding-bottom:10px;
+		}
+ 
  		
 	.sidebar{
-	  width:90%;
+	  width:95%;
 	  height:auto;
-	  padding-top:5px;
+	  margin-top:10px;
 	  margin:0 auto;
-  	  background-color:red;
+  	  background:url(../imagenes/.jpg);
 	  text-align:center;
 	  justify-content: center;
 	  flex-wrap: wrap;
 	 }
 	 
-	 .sidebar h3{
-	   text-align:center;
-	   color:white;
-	   padding-top:30px;
-	 }
-		
 	 .sidebar video{
-        width:90%;
+        width:95%;
         height:300px;
-        margin-top:-10px;
+        margin-top:10px;
 		 display: flex;
 	     justify-content: center;
 	     flex-wrap: wrap;
-         margin-left: 0 auto;
+         margin: 0 auto;
 	  }
 	  
-	  .sidebar #videojs-http-source-selector-mute-player{
-	  width:100%;
-	  height:330px;
-  	  background:url(../imagenes/elemento.jpg);
+	  .sidebar #players{
+	  width:95%;
+	  height:300px;
+  	  background:url(../imagenes/.jpg);
 	  text-align:center;
 	  justify-content: center;
-	  flex-wrap: wrap; 
-	  margin-left:0px;
-      padding-top:0px;
+	  display: flex;
+	  margin-top:10px,
+	  justify-content: center;
+	  flex-wrap: wrap;
+      margin: 0 auto;
 	  }
      }
 	 
@@ -4785,7 +4579,7 @@ article .elemento {
 .menu{
     position: fixed;
     margin-left:3px;
-    width:99.4%;
+    width:99.5%;
     height: 60px;
     color:red;
     display: flex;
@@ -7467,7 +7261,7 @@ footer {
 
  .carousels-radio h2{
 
-	 color:black;
+	 color:red;
 
 	 padding-top:35px;
 	 
@@ -10647,17 +10441,19 @@ footer {
 
     }
 
-    .owl-carousels_1 .item iframe{
+    .owl-carousels_1 .item video{
 
-      width:100%;
-	 
-      text-align: center;
-
-      height:300px; 
-	  
-	  margin-top:0px;
-	  
-	  margin-bottom:0px;
+    width:100%;
+	  height:330px;
+  	  background:url(../imagenes/elemento.jpg);
+	  text-align:center;
+	  justify-content: center;
+	  display: flex;
+	  padding-top:10px,
+	  justify-content: center;
+	  flex-wrap: wrap;
+      margin-left: 0 auto;
+    height: 100%;
 
     }
 
@@ -10672,6 +10468,8 @@ footer {
      font-weight: 100;
 
      display: flex;
+	 
+	 font-family: Montserrat, sans-serif;
 
      justify-content: center;
 
@@ -10681,7 +10479,7 @@ footer {
 
 	 margin:0 auto;
 
-	 color:blue; 
+	 color:red; 
 
 }
 
@@ -10707,7 +10505,7 @@ footer {
 
  .owl-carousels_1 .content p{
 
-	width:98%;
+	width:90%;
 	
 	height:100px;
 
@@ -10943,6 +10741,8 @@ footer {
      font-size: 20px;
 
      display: flex;
+	 
+	 font-family: Montserrat, sans-serif;
 
      justify-content: center;
 
@@ -10952,7 +10752,7 @@ footer {
 
 	 margin:0 auto;
 
-	 color:blue;
+	 color:red;
 
    }
 
@@ -10976,7 +10776,7 @@ footer {
 
  .owl-carousels_1 .content p{
 
-	width:96%;
+	width:90%;
 	
 	height:100px;
 
@@ -11056,6 +10856,8 @@ footer {
      display: flex;
 
      justify-content: center;
+	 
+	 font-family: Montserrat, sans-serif;
 
      flex-wrap: wrap;
 
@@ -11063,7 +10865,8 @@ footer {
 
 	 margin:0 auto;
 
-	  color:blue;
+	  color:red;
+	  
 
    }
 
@@ -11087,7 +10890,7 @@ footer {
 
  .owl-carousels_1 .content p{
 
-	width:96%;
+	width:90%;
 	
 	height:80px;
 
@@ -11173,7 +10976,7 @@ footer {
 
 	 margin:0 auto;
 
-	 color:blue;
+	 color:red;
 
    }
 
@@ -11197,7 +11000,7 @@ footer {
 
  .owl-carousels_1 .content p{
 
-	width:96%;
+	width:90%;
 	
 	height:80px;
 
@@ -11285,7 +11088,7 @@ footer {
 
 	 margin:0 auto;
 
-	 color:blue;
+	 color:red;
 
    }
 
@@ -11309,7 +11112,7 @@ footer {
 
  .owl-carousels_1 .content p{
 
-	width:96%;
+	width:93%;
 	
 	height:90px;
 
