@@ -2122,7 +2122,7 @@ article .elemento {
 		}
 		
 		.caja-portfolio{
-		  width:45%;
+		  width:50%;
 		  padding-top:5px;
 		  padding-bottom:10px;
 		}
@@ -2150,7 +2150,7 @@ article .elemento {
 		.sidebar{
 			display: inline-block;
 		    background:url(../imagenes/elemento.jpg);
-			width:53%;
+			width:45%;
 			padding-top:0px;
 			vertical-align: top; 
 		}
@@ -2161,26 +2161,18 @@ article .elemento {
 		  padding-top:25px;
 		}
 		
-		.sidebar video{
-         width:98%;
-		 height:280px;
+		.sidebar iframe{
+         width:95%;
+		 height:300px;
          padding-top:0px;
 		 display: flex;
 	     justify-content: center;
 	     flex-wrap: wrap;
 		 margin:30px;
-         margin-left: 0 auto;
-		 -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.44);
-        -moz-box-shadow: 1px 1px 2px rgba(0,0,0,0.44);
-        box-shadow: 1px 1px 2px rgba(0,0,0,0.44);
-       -webkit-transition: all 0.4s linear;
-       -moz-transition: all 0.4s linear;
-       -ms-transition: all 0.4s linear;
-       -o-transition: all 0.4s linear;
-        transition: all 0.4s linear;  
- }
-        }
+         margin: 0 auto;
 		
+        }
+    
 
 @media (min-width:961px)and (max-width:1023px){
 
@@ -2239,8 +2231,8 @@ article .elemento {
  		
 	.sidebar{
 	  width:90%;
-	  height:350px;
-	  padding-top:10px;
+	  height:auto;
+	  padding-top:50px;
 	  margin:0 auto;
   	  background:url(../imagenes/elemento.jpg);
 	  text-align:center;
@@ -2254,10 +2246,9 @@ article .elemento {
 	   padding-top:30px;
 	 }
 		
-	 .sidebar video{
+	 .sidebar iframe{
         width:85%;
         height:350px;
-        padding-top:3%;
 		 display: flex;
 	     justify-content: center;
 	     flex-wrap: wrap;
@@ -2305,7 +2296,7 @@ article .elemento {
 	  align-items:flex-start;
 	  flex-direction:column;
 	   margin:0 auto;
-	  padding-bottom:20px;
+	  padding-bottom:10px;
 	 }
 	 
     .caja-portfolio{
@@ -2323,7 +2314,7 @@ article .elemento {
 		}
 		
     .caja-portfolio p{
-		 width:85%;
+		 width:95%;
 		 margin: 0 auto;
 		 text-align:center;
 		 color:white;
@@ -2334,9 +2325,9 @@ article .elemento {
 		}	
  		
 	.sidebar{
-	  width:90%;
+	  width:98%;
 	  height:330px;
-	  padding-top:10px;
+	  padding-top:40px;
 	  margin:0 auto;
   	  background:url(../imagenes/elemento.jpg);
 	  text-align:center;
@@ -2350,10 +2341,9 @@ article .elemento {
 	   padding-top:30px;
 	 }
 		
-	 .sidebar video{
-        width:85%;
+	 .sidebar iframe{
+        width:95%;
         height:300px;
-        padding-top:10px;
 		 display: flex;
 	     justify-content: center;
 	     flex-wrap: wrap;
@@ -2417,8 +2407,8 @@ article .elemento {
 		
 		}
 		
-    .caja-portfolio p{
-		 width:85%;
+    .boxes-portfolio p{
+		 width:92%;
 		 margin: 0 auto;
 		 text-align:center;
 		 color:white;
@@ -2431,7 +2421,7 @@ article .elemento {
 	.sidebar{
 	  width:95%;
 	  height:auto;
-	  padding-top:10px;
+	  padding-top:30px;
 	  margin:0 auto;
   	  background:url(../imagenes/.jpg);
 	  text-align:center;
@@ -2445,10 +2435,9 @@ article .elemento {
 	   padding-top:0px;
 	 }
 		
-	 .sidebar video{
-        width:85%;
-        height:auto;
-        padding-top:10px;
+	 .sidebar iframe{
+        width:95%;
+        height:300px;
 		 display: flex;
 	     justify-content: center;
 	     flex-wrap: wrap;
@@ -2472,7 +2461,21 @@ article .elemento {
 
 @media (min-width:320px)and (max-width:479px){
   
-   .boxes-portfolio{
+   .turismo h1{
+	width:30%;
+	height:35px;
+    color:white;
+	margin:0 auto;
+	padding-top:5px;
+    margin-top:80px;
+	margin-bottom:25px;
+    font-family: Montserrat, sans-serif;
+	text-align:center;
+	box-shadow: 0 0px 15px 3px rgba(98, 199, 231, 0.9);  
+    background-color: #17171d;
+  }
+
+  .boxes-portfolio{
 	  width:97%;
 	  height:auto;
 	  background:url(../imagenes/imag.jpg);
@@ -2487,7 +2490,6 @@ article .elemento {
 	 
     .caja-portfolio{
 		  width:95%;
-		  height:350px;
 		  padding-top:20px;
 		  margin:0 auto;
 		}	
@@ -2495,27 +2497,26 @@ article .elemento {
     .caja-portfolio h3{
 		text-align:center;
 		color:red;
-		font-size:25px;
 		font-family:courier,arial,helvética;
-	
+		font-size:25px;
+		
 		}
 		
-    .caja-portfolio p{
+    .boxes-portfolio p{
 		 width:85%;
 		 margin: 0 auto;
 		 text-align:center;
 		 color:white;
 		 padding-top:20px;
 		 text-align:justify;
-		 font-size:15px;
+		 font-size:14px;
 		 padding-bottom:10px;
-		}
- 
+		}	
  		
 	.sidebar{
-	  width:95%;
+	  width:98%;
 	  height:auto;
-	  margin-top:10px;
+	  padding-top:30px;
 	  margin:0 auto;
   	  background:url(../imagenes/.jpg);
 	  text-align:center;
@@ -2523,10 +2524,15 @@ article .elemento {
 	  flex-wrap: wrap;
 	 }
 	 
-	 .sidebar video{
-        width:95%;
+	 .sidebar h3{
+	   text-align:center;
+	   color:white;
+	   padding-top:0px;
+	 }
+		
+	 .sidebar iframe{
+        width:97%;
         height:300px;
-        margin-top:10px;
 		 display: flex;
 	     justify-content: center;
 	     flex-wrap: wrap;
@@ -2534,13 +2540,13 @@ article .elemento {
 	  }
 	  
 	  .sidebar #players{
-	  width:95%;
+	  width:93%;
 	  height:300px;
   	  background:url(../imagenes/.jpg);
 	  text-align:center;
 	  justify-content: center;
 	  display: flex;
-	  margin-top:10px,
+	  padding-top:10px,
 	  justify-content: center;
 	  flex-wrap: wrap;
       margin: 0 auto;
@@ -6863,7 +6869,7 @@ footer {
 
 	margin: 0 auto;
 
-	margin-bottom:25px;   
+	margin-bottom:5px;   
 
 	display:flex;
 
@@ -10441,18 +10447,17 @@ footer {
 
     }
 
-    .owl-carousels_1 .item video{
+    .owl-carousels_1 .item iframe{
 
-    width:100%;
-	  height:330px;
-  	  background:url(../imagenes/elemento.jpg);
+      width:100%;
+	  height:300px;
 	  text-align:center;
 	  justify-content: center;
 	  display: flex;
-	  padding-top:10px,
+
 	  justify-content: center;
 	  flex-wrap: wrap;
-      margin-left: 0 auto;
+      margin: 0 auto;
     height: 100%;
 
     }
@@ -10479,7 +10484,7 @@ footer {
 
 	 margin:0 auto;
 
-	 color:red; 
+	 color:yellow; 
 
 }
 
@@ -10752,7 +10757,7 @@ footer {
 
 	 margin:0 auto;
 
-	 color:red;
+	 color:yellow; 
 
    }
 
@@ -10865,7 +10870,7 @@ footer {
 
 	 margin:0 auto;
 
-	  color:red;
+	 color:yellow; 
 	  
 
    }
@@ -10976,7 +10981,7 @@ footer {
 
 	 margin:0 auto;
 
-	 color:red;
+	 color:yellow; 
 
    }
 
@@ -11088,7 +11093,7 @@ footer {
 
 	 margin:0 auto;
 
-	 color:red;
+	 color:yellow; 
 
    }
 
